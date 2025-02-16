@@ -1,16 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# Install Required Libraries
-import subprocess
-import sys
-
-# Install necessary dependencies
-required_packages = ["boto3", "sagemaker", "langchain", "streamlit"]
-
-for package in required_packages:
-    subprocess.run([sys.executable, "-m", "pip", "install", "--user", package], check=True)
-
 # Import Necessary Libraries
 import boto3
 import sagemaker
