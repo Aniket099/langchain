@@ -5,7 +5,15 @@
 
 
 # Install Required Libraries
-get_ipython().system('pip install boto3 sagemaker langchain streamlit PyMuPDF tiktoken')
+import subprocess
+import sys
+
+# Install necessary dependencies
+required_packages = ["boto3", "sagemaker", "langchain", "streamlit"]
+
+for package in required_packages:
+    subprocess.run([sys.executable, "-m", "pip", "install", package])
+
 
 
 # In[2]:
